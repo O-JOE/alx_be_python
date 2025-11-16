@@ -1,4 +1,4 @@
-def get_recommendation(weather_input: str) -> str:
+def get_recommendation(weather_input):
     weather = weather_input.strip().lower()
 
     if weather == "sunny":
@@ -11,7 +11,7 @@ def get_recommendation(weather_input: str) -> str:
         return "Sorry, I don't have recommendations for this weather."
 
 def main():
-    user_input = input("Enter weather (sunny/rainy/cold): ")
+    user_input = input("What's the weather like today? (sunny/rainy/cold): ")
     recommendation = get_recommendation(user_input)
     print(recommendation)
 
