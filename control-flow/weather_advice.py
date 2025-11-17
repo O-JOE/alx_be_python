@@ -1,19 +1,10 @@
-def get_recommendation(weather_input):
-    weather = weather_input.strip().lower()
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
 
-    if weather == "sunny":
-        return "Wear a T-shirt and sunglasses."
-    elif weather == "rainy":
-        return "Don't forget your umbrella and a raincoat."
-    elif weather == "cold":
-        return "Make sure to wear a warm coat and a scarf."
-    else:
-        return "Sorry, I don't have recommendations for this weather."
-
-def main():
-    user_input = input("What's the weather like today? (sunny/rainy/cold): ")
-    recommendation = get_recommendation(user_input)
-    print(recommendation)
-
-if __name__ == "__main__":
-    main()
+if(weather == "sunny"):
+    print("Wear a t-shirt and sunglassess.")
+elif(weather == "rainy"):
+    print("Don't forget your umbrella and a raincoat.")
+elif(weather == "cold"):
+    print("Make sure to wear a warm coat and a scarf.")
+else:
+    print("Sorry, I don't have recommendations for this weather.")
