@@ -22,9 +22,6 @@ match priority:
 
 # Modify reminder based on time-bound status
 if time_bound == "yes":
-    reminder = f"'{task}' is a high priority task that requires immediate attention today!"
+    print(f"'{task}' is a high priority task that requires immediate attention today!")
 else:
-    reminder = f"'{task}' is a low priority task. Consider completing it when you have free time."
-
-# Print the customized reminder
-print(reminder)
+    print(f"'{task}' is a low priority task. Consider completing it when you have free time.")
